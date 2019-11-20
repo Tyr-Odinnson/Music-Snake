@@ -91,7 +91,7 @@ public class GameActivity extends Activity {
         display.getSize(screenSize);
         topGap = screenSize.y / 14;
 
-        int blocksHorizontal = 10;
+        int blocksHorizontal = 15;
         blockSize = screenSize.x / blocksHorizontal;
 
         blockDimensions.x = blocksHorizontal;
@@ -107,7 +107,7 @@ public class GameActivity extends Activity {
 
         // Scale the bitmaps to match the block size.
         headBitmap = Bitmap.createScaledBitmap(headBitmap, blockSize, blockSize, false);
-        bodyBitmap = Bitmap.createScaledBitmap(bodyBitmap, blockSize, blockSize, false);
+        bodyBitmap = Bitmap.createScaledBitmap(bodyBitmap, blockSize, blockSize, true);
         tailBitmap = Bitmap.createScaledBitmap(tailBitmap, blockSize, blockSize, false);
         appleBitmap = Bitmap.createScaledBitmap(appleBitmap, blockSize, blockSize, false);
     }
