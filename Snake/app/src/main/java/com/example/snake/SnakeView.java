@@ -137,9 +137,9 @@ class SnakeView extends SurfaceView implements Runnable {
 
         if (ourHolder.getSurface().isValid()) {
             Canvas canvas = ourHolder.lockCanvas();
-            canvas.drawColor(Color.BLACK);
+            canvas.drawColor(Color.WHITE);
 
-            paint.setColor(Color.argb(255, 255, 255, 255));
+            paint.setColor(Color.argb(255, 0, 0, 0));
             paint.setTextSize(ga.topGap / 2);
             canvas.drawText("Score:" + score + "  Hi:" + highScore, 10, ga.topGap - 6, paint);
 
